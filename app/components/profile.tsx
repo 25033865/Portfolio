@@ -10,8 +10,8 @@ return (
           {/* Profile Image */}
         <div className="relative group flex justify-center sm:justify-start">
             <div
-            className="w-24 h-24 sm:w-28 sm:h-28 rounded-full p-[3px] bg-gradient-to-r from-purple-500 to-blue-500
-            transition duration-300 group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]"
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full p-[3px] bg-gradient-to-r from-purple-500 to-blue-500
+                    transition duration-300 group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]"
             >
             <img
                 src="/profile.jpg"

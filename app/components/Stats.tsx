@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 
 const descriptions = [
-  "I'm a Mobile App Developer crafting high-performance, user-friendly applications.Specializing in React Native and cross-platform development, I turn concepts into polished, scalable mobile experiences that users love.",
-  "My journey in app development started in high school — where curiosity sparked a passion for building. Today, with 2+ years of professional experience, I craft high-performance, user-friendly mobile applications that turn concepts into scalable, impactful experiences."
+  "I'm a Mobile App Developer crafting high-performance. Specializing in React Native and cross-platform development, I turn concepts into polished, scalable mobile experiences that users love.",
+  "My journey in app development started in high school  where curiosity sparked a passion for building. Today, with 2+ years of professional experience, I craft high-performance mobile applications."
 ];
 
 export default function Stats() {
@@ -19,7 +19,7 @@ export default function Stats() {
   }, []);
 
   return (
-    <div className="relative mt-6 h-24 md:h-28 max-w-2xl mx-auto md:mx-0 ">
+    <div className="relative mt-6 min-h-[120px] sm:min-h-[100px] md:h-28 max-w-2xl mx-auto md:mx-0 px-2 sm:px-0">
       {descriptions.map((text, i) => (
         <p
           key={i}
@@ -27,12 +27,12 @@ export default function Stats() {
             absolute inset-0
             transition-all duration-700 ease-in-out
             text-center md:text-left
-            text-sm md:text-base
+            text-sm sm:text-sm md:text-base
             text-muted-foreground font-semibold leading-relaxed
             ${
               index === i
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
+                : "opacity-0 translate-y-5"
             }
           `}
         >
