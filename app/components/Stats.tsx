@@ -1,0 +1,44 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+const descriptions = [
+  "I'm a Mobile App Developer crafting high-performance, user-friendly applications.Specializing in React Native and cross-platform development, I turn concepts into polished, scalable mobile experiences that users love.",
+  "My journey in app development started in high school — where curiosity sparked a passion for building. Today, with 2+ years of professional experience, I craft high-performance, user-friendly mobile applications that turn concepts into scalable, impactful experiences."
+];
+
+export default function Stats() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % descriptions.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative mt-6 h-24 md:h-28 max-w-2xl mx-auto md:mx-0 ">
+      {descriptions.map((text, i) => (
+        <p
+          key={i}
+          className={`
+            absolute inset-0
+            transition-all duration-700 ease-in-out
+            text-center md:text-left
+            text-sm md:text-base
+            text-muted-foreground font-semibold leading-relaxed
+            ${
+              index === i
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
+            }
+          `}
+        >
+          {text}
+        </p>
+      ))}
+    </div>
+  );
+}
