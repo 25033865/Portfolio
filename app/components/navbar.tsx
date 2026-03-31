@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul
         tabIndex={-1}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a className="rounded-xl hover:bg-indigo-600 ">About</a></li>
+        <li><a className="rounded-xl hover:bg-indigo-900/10">About</a></li>
         <li>
           <a className="rounded-xl hover:bg-indigo-900/10">Content</a>
           <ul className="p-2">
@@ -39,8 +39,8 @@ const Navbar = () => {
       <li><a className="rounded-xl hover:bg-indigo-900/10">Contact</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn rounded-xl hover:bg-indigo-900/10">Let&apos;s Talk</a>
+  <div className="navbar-end ">
+    <a className="btn rounded-xl bg-indigo-900/10">Let&apos;s Talk</a>
   </div>
 </div>
 
