@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={-1}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-inherit rounded-box z-1 mt-3 w-24 p-2 shadow">
         <li><a className="rounded-xl hover:bg-indigo-900/10">About</a></li>
         <li>
           <a className="rounded-xl hover:bg-indigo-900/10">Content</a>
@@ -22,7 +22,7 @@ const Navbar = () => {
         <li><a className="rounded-xl hover:bg-indigo-900/10">Contact</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl rounded-xl hover:bg-indigo-900/10">Mudau R.A</a>
+    <a className="btn btn-ghost text-xl rounded-xl bg-inherit">Mudau R.A</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -30,7 +30,7 @@ const Navbar = () => {
       <li>
         <details className="bg-inherit">
           <summary className="rounded-xl hover:bg-indigo-900/10">Content</summary>
-          <ul className="p-2 bg-inherit w-40 z-1">
+          <ul className="p-2 bg-inherit w-10 z-1">
             <li><a className="rounded-xl hover:bg-indigo-900/10">Projects</a></li>
             <li><a className="rounded-xl hover:bg-indigo-900/10">Demos</a></li>
           </ul>
@@ -39,7 +39,7 @@ const Navbar = () => {
       <li><a className="rounded-xl hover:bg-indigo-900/10">Contact</a></li>
     </ul>
   </div>
-  <div className="navbar-end ">
+  <div className="navbar-end rounded-xl">
     <a className="btn rounded-xl bg-indigo-900/10">Let&apos;s Talk</a>
   </div>
 </div>

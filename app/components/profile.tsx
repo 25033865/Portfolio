@@ -14,7 +14,7 @@ return (
                     transition duration-300 group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]"
             >
             <img
-                src="/profile.jpg"
+                src="/avatar.svg"
                 alt="profile"
                 className="w-full h-full rounded-full object-cover transition duration-300 group-hover:scale-105"
             />
