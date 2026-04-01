@@ -9,7 +9,6 @@ const page = () => {
       <Navbar />
       <Background />
       <Profile />
-
     </>
   )
 }

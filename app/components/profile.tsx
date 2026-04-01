@@ -48,9 +48,9 @@ return (
         <h2 className="text-purple-500 text-lg sm:text-xl font-bold mb-6">
             Full Stack Developer
         </h2>
-        <span className="mt-6 max-w-xl mx-auto md:mx-0 text-sm md:text-gray-400 text-gray-400 leading-relaxed font-medium">
+        <div className="mt-6 max-w-xl mx-auto md:mx-0 text-sm md:text-gray-400 text-gray-400 leading-relaxed font-medium">
             <Stats />
-        </span>
+        </div>
           {/* Tech Stack */}
         <div className="flex flex-wrap justify-center sm:justify-start gap-3">
             {["React.js", "Next.js", "Figma", "Java", "Firebase"].map(
