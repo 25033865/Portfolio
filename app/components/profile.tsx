@@ -41,7 +41,8 @@ return (
         <div className="text-center sm:text-left">
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">
             Hi, I&apos;m <br />
-            Mudau Rotondwa <br />
+            
+             Rotondwa <br />
             Agriment
         </h1>
 
